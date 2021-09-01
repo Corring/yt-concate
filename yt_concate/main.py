@@ -9,7 +9,6 @@ def main():
     inputs = {
         'channel_id': CHANNEL_ID
     }
-    # 这段程式码是在运行每个steps
     # this is a pipeline
     steps = [
         GetVideoList(),
@@ -19,6 +18,5 @@ def main():
     p.run(inputs)
 
 
-# 如果是进入点才执行这个function
 if __name__ == '__main__':
     main()
